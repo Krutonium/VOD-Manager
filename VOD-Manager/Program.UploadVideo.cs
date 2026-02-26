@@ -41,7 +41,7 @@ internal partial class Program
             "video/*"
         );
 
-        request.ChunkSize = 16 * 1024 * 1024; //16MB Chunk Size
+        request.ChunkSize = 16 * 1024 * 1024; //5MB Chunk Size
 
         lastBytesSent = 0;
         lastTime = DateTime.UtcNow;

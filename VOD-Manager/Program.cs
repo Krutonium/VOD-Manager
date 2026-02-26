@@ -31,8 +31,9 @@ namespace VOD_Manager
                 DateTimeKind.Utc
             );
             var youtube = await Authenticate();
-
-            await UploadVideo(youtube, filePath, title, description, publishAtUtc);
+            string videoPath = MergeVideo(filePath);
+            await UploadVideo(youtube, videoPath, title, description, publishAtUtc);
+            File.Delete(videoPath);
         }
     }
 }
