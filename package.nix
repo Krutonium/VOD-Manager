@@ -21,6 +21,6 @@ buildDotnetModule {
   meta = {
     description = "Automated YouTube VOD uploader and scheduler";
     homepage = "https://example.invalid";
-    license = license.MIT;
+    license = "MIT";
   };
 }
